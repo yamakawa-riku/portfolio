@@ -41,7 +41,7 @@
 }
 
 .profile .self-introduction div :nth-child(2) {
-  margin: 0 20px;
+  margin: 10px 20px 0px;
   font-weight: 800;
   font-size: 28px;
 }
