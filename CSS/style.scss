@@ -1,0 +1,148 @@
+@charset "UTF-8";
+/*全体*/
+html {
+  height: 100%;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+header {
+  width: 100%;
+  align-items: center;
+  background-color: rgba(255, 255, 255,0.5);
+  backdrop-filter: blur(12px); 
+  // background-color: #f2ece3;
+  display: flex;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+  position: fixed;
+  z-index: 9999;
+}
+@media screen and (max-width:480px) {
+}
+
+.header-logo {
+  font-size: 0;
+  padding: 10px;
+  margin-left: 1%;
+}
+
+img.logo {
+  min-height: 85px;
+  max-height: 85px;
+}
+
+nav {
+  margin-left: auto;
+}
+
+.header-list li {
+  display: inline-block;
+  list-style: none;
+  margin: 0 30px 0 10px;
+}
+
+.menu {
+  justify-content: space-around;
+}
+.menu a {
+  font-size: 25px;
+}
+.menu a:link {
+  color: #000000;
+  text-decoration: none;
+}
+.menu a:visited {
+  color: #000000;
+  text-decoration: none;
+}
+.menu a:active {
+  color: #3c454d;
+  text-decoration: none;
+}
+
+
+/* テキストナビゲーション */
+.menu li a{
+  /*線の基点とするためrelativeを指定*/
+position: relative;
+}
+.menu li a::after {
+  content: '';
+  /*絶対配置で線の位置を決める*/
+  position: absolute;
+  bottom: 0;
+  left: 10%;
+  /*線の形状*/
+  width: 80%;
+  height: 2px;
+  background:#3c454d;
+  /*アニメーションの指定*/
+  transition: all .3s;
+  transform: scale(0, 1);/*X方向0、Y方向1*/
+  transform-origin: center top;/*上部中央基点*/
+}
+/*現在地とhoverの設定*/
+.menu li.current a::after,
+.menu li a:hover::after {
+  transform: scale(1.4, 1);/*X方向にスケール拡大*/
+}
+
+
+.mainVisual {
+  width: 100%;
+  background-color: #C6BEB3;
+  display: inline-block;
+  opacity: 0.73;
+  display: block;
+}
+
+
+.content h1 {
+  border-bottom: solid;
+}
+.content h1::after {
+  content: "";
+  display: block;
+  width: 30%;
+  height: 3px;
+}
+.content h2 {
+  border-bottom: solid;
+}
+.content h2::after {
+  content: "";
+  display: block;
+  width: 30%;
+  height: 3px;
+}
+
+
+h1 {
+  margin: 70px 0;
+  font-size: 46px;
+  text-align: left;
+}
+
+h2 {
+  margin: 70px 0;
+  font-size: 46px;
+  text-align: left;
+}
+
+
+footer {
+  position: sticky;
+  top: 100vh;
+  background-color: rgba(255, 255, 255,0.5);
+  backdrop-filter: blur(12px);
+  // background-color: #DDCEBA;
+  padding: 20px;
+  color: #000000;
+  text-align: center;
+}
+/*全体終わり*/

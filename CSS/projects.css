@@ -1,0 +1,120 @@
+.content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.content .profile-Projects {
+  width: 70%;
+  margin: auto;
+}
+.content .profile-Projects h2 {
+  text-align: center;
+}
+.content .profile-Projects .img {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  margin-bottom: 100px;
+}
+.content .profile-Projects .img img {
+  max-width: 100%;
+}
+.content .profile-Projects div {
+  margin: 5px;
+  display: flex;
+  margin-bottom: 20px;
+}
+.content .profile-Projects div h3 {
+  font-size: 18px;
+  width: 100%;
+  display: inline;
+}
+.content .profile-Projects div p {
+  font-size: 15px;
+  width: 100%;
+  margin: auto;
+}
+.content .profile-Projects .point {
+  display: grid;
+  width: 100%;
+}
+
+.Projects h2 {
+  text-align: center;
+}
+
+ .Projects ul {
+  width: 80%;
+  margin: auto;
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.Projects div {
+  width: calc(33.33% - 10px);
+  margin-bottom: 20px;
+  box-shadow: 0px 0px 0px #000;
+}
+
+@media screen and (max-width: 1350px) {
+  .Projects div {
+    width: calc(50% - 10px);
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .Projects div {
+    width: 1000%;
+  }
+}
+
+.Projects ul div {
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.Projects ul div img {
+  margin: 10px;
+  transform: scale(1.1);
+  box-shadow: 5px 2px 10px rgba(0, 0, 0, 0.5);
+  overflow: hidden;
+  transition: all 0.3s;
+}
+
+.Projects ul div:hover img {
+  box-shadow: 5px 2px 5px rgba(0, 0, 0, 0);
+  transform: scale(1);
+  transition: all 0.3s;
+}
+
+.project-image {
+  width: 100%;
+  height: auto;
+  border: 1px solid #ccc;
+}
+
+.Projects li {
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+.Projects p {
+  margin-top: 5px;
+}
+
+.link_btn {
+  text-align: center;
+  flex-direction: column;
+}
+.link_btn a{
+  margin: 50px 50px 15px 50px;
+  color: #fff;
+  font-weight: bold;
+  padding: 0.75rem 2.5rem;
+  border: 2px solid #000;
+  position: relative;
+  background: #000;
+}

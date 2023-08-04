@@ -1,0 +1,54 @@
+.content {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.content .profile-Projects {
+  width: 70%;
+  margin: auto;
+}
+.content .profile-Projects h2 {
+  text-align: center;
+}
+.content .contact {
+  width: 80%;
+  margin: auto;
+}
+.content .contact h2 {
+  text-align: center;
+}
+.content .contact div span {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 15px;
+}
+.offset {
+    margin-left: 8.33333333%;
+    width: 83.33333333%;
+}
+.form-group {
+  margin-bottom: 15px;
+}
+.form-control {
+  display: block;
+  width: 100%;
+  height: 34px;
+  padding: 6px 12px;
+  font-size: 14px;
+  line-height: 1.42857143;
+  color: #555;
+  background-color: #fff;
+  background-image: none;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+textarea.form-control {
+  height: auto;
+}
+.btn {
+  width: 100%;
+  padding: 6px 12px;
+  font-size: 14px;
+  border: 1px solid transparent;
+}
